@@ -11,7 +11,7 @@ RUN wget http://central.maven.org/maven2/io/swagger/swagger-codegen-cli/2.3.1/sw
 RUN echo -e '#!/usr/bin/env sh\njava -jar /usr/bin/swagger-codegen-cli.jar "$@"' | tee --append /usr/bin/swagger-codegen
 RUN chmod a+x /usr/bin/swagger-codegen
 
-# install docker
+# install terraform 
 RUN apt-get install unzip
 RUN wget https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip
 RUN unzip terraform_0.11.11_linux_amd64.zip
