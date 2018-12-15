@@ -13,6 +13,6 @@ RUN chmod a+x /usr/bin/swagger-codegen
 
 # install docker
 RUN apt-get install unzip
-RUN wget https://releases.hashicorp.com/terraform/0.11.8/terraform_0.11.8_linux_amd64.zip
-RUN unzip terraform_0.11.8_linux_amd64.zip
+RUN wget https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip
+RUN unzip terraform_0.11.11_linux_amd64.zip
 RUN mv terraform /usr/local/bin/
