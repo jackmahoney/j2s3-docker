@@ -3,7 +3,7 @@ FROM maven:3.5.4-jdk-10-slim
 # install python3 and j2s3-cli
 RUN apt-get update
 RUN apt-get install -y python3-pip
-RUN pip3 -I j2s3-cli==1.1.1
+RUN pip3 install 'j2s3-cli==1.1.1'
 
 # install swagger codegen cli
 RUN apt-get install wget
